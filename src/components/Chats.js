@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase"
 import { useAuth } from "../contexts/AuthContext"
-
+import Footer from "./Footer";
 
 const Chats = () => {
   const history = useHistory();
@@ -73,6 +73,7 @@ const Chats = () => {
 if (!user || loading) return "Loading ...";
 
 return (
+  <div>
   <div className='chats-page'>
     <div className='nav-bar'>
       <div className='logo-tab'>
@@ -90,6 +91,9 @@ return (
       userName={user.email}
       userSecret={user.uid}
     />
+  </div>
+
+  <Footer/>
   </div>
 )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { FacebookLoginButton,GoogleLoginButton } from "react-social-login-buttons";
 import "firebase/app";
+import Footer from "./Footer";
 import { auth } from "../firebase";
 import firebase from "firebase/app";
 
@@ -21,6 +22,7 @@ const Login = () => {
                 </div>
             </div>
         
+            <Footer/>
         </div>
 
     );

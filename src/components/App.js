@@ -9,7 +9,7 @@ import Footer from "./Footer"
 import Login from "./Login"
 
 function App() {
-  return (<div>
+  return (
     <div style={{ fontFamily: 'Avenir' }}>
       <Router>
         <AuthProvider>
@@ -20,8 +20,7 @@ function App() {
         </AuthProvider>
       </Router>
     </div>
-    <Footer/>
-    </div>
+ 
   )
 }
 
