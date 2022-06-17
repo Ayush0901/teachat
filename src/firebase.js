@@ -1,6 +1,6 @@
 
-import firebase from "firebase/app"
-import "firebase/auth"
+import firebase from "firebase/app";
+import "firebase/auth";
 
 export const auth = firebase.initializeApp( {
     apiKey: "AIzaSyATe07GNWOcPjkma7hWUVt7ObFxbLnO-PM",
@@ -10,4 +10,4 @@ export const auth = firebase.initializeApp( {
     messagingSenderId: "821143881552",
     appId: "1:821143881552:web:4a672cd5215790a41f0e55",
     measurementId: "G-B3Z45G1J5Y"
-  }).auth()
+  }).auth();

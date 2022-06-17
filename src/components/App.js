@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { AuthProvider } from "../contexts/AuthContext"
 
 import Chats from "./Chats"
+import Footer from "./Footer"
 import Login from "./Login"
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
           </Switch>
         </AuthProvider>
       </Router>
+      <Footer/>
     </div>
   )
 }
 
-export default App
+export default App;

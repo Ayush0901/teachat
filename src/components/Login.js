@@ -1,10 +1,9 @@
 import React from "react";
-import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
+import { FacebookLoginButton,GoogleLoginButton } from "react-social-login-buttons";
 import "firebase/app";
 
 import { auth } from "../firebase";
 import firebase from "firebase/app";
-import { AuthProvider } from "../contexts/AuthContext";
 
 const Login = () => {
     return (
@@ -12,17 +11,20 @@ const Login = () => {
             <div id="login-card">
                 <h2>Welcome to Teachat!</h2>
 
-                <div className="login-button google" onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}>
-                    <GoogleOutlined />Sign in with google
+                <div className="login-button">
+                    <GoogleLoginButton onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}/>
                 </div>
 
-                <br/> <br/>
-                
-                <div className="login-button facebook" onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}>
-                    <FacebookOutlined />Sign in with facebook
+                <br /> <br />
+
+                <div className="login-button">
+                    <FacebookLoginButton onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())} />
                 </div>
             </div>
+        
+
         </div>
+
     );
 }
 
