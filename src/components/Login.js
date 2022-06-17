@@ -7,7 +7,6 @@ import firebase from "firebase/app";
 
 const Login = () => {
     return (
-        <div>
         <div id="login-page">
             <div id="login-card">
                 <h2>Welcome to Teachat!</h2>
@@ -21,12 +20,13 @@ const Login = () => {
                 <div className="login-button">
                     <FacebookLoginButton onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())} />
                 </div>
+                <Footer/>
             </div>
         
-           
+            
+
         </div>
-        <Footer/>
-        </div>
+        
 
     );
 }
