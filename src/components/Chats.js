@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase"
-import Footer from "./Footer";
 import { useAuth } from "../contexts/AuthContext"
 
 
@@ -91,7 +90,6 @@ return (
       userName={user.email}
       userSecret={user.uid}
     />
-    <Footer/>
   </div>
 )
 }
