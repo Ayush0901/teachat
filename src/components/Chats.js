@@ -4,7 +4,6 @@ import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase"
 import { useAuth } from "../contexts/AuthContext"
-import Footer from "./Footer";
 
 const Chats = () => {
   const history = useHistory();
@@ -93,7 +92,6 @@ return (
     />
   </div>
 
-  <Footer/>
   </div>
 )
 }

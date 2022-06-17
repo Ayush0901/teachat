@@ -7,6 +7,7 @@ import firebase from "firebase/app";
 
 const Login = () => {
     return (
+        <div>
         <div id="login-page">
             <div id="login-card">
                 <h2>Welcome to Teachat!</h2>
@@ -22,7 +23,9 @@ const Login = () => {
                 </div>
             </div>
         
-            <Footer/>
+           
+        </div>
+        <Footer/>
         </div>
 
     );
